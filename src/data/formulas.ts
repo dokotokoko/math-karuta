@@ -194,6 +194,66 @@ export const formulas: Formula[] = [
   },
   {
     id: '32',
+    problem: '不定積分の公式は？',
+    formula: '∫f(x)dx=F(x)+C',
+    imageUrl: 'https://images.unsplash.com/photo-1902837465019-a0c1f6e9d3b7?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: '33',
+    problem: '定積分の公式は？',
+    formula: '∫[a,b] f(x)dx=[F(x)] [a,b]=F(b)-F(a)',
+    imageUrl: 'https://images.unsplash.com/photo-1657382940672-e9b1a4f3c0d7?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: '34',
+    problem: '積分を使った面積の求め方は？',
+    formula: '∫[a,b](x-a)(x-b)dx=-(β-α)^3/6',
+    imageUrl: 'https://images.unsplash.com/photo-1483759203845-d0f7c3b9e1a5?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: '35',
+    problem: '等差数列の一般項は？',
+    formula: 'an=a1+(n-1)d',
+    imageUrl: 'https://images.unsplash.com/photo-1592837461058-c6e0b7d1f9a3?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: '36',
+    problem: '等比数列の一般項は？',
+    formula: 'an=a1r^(n-1)',
+    imageUrl: 'https://images.unsplash.com/photo-1938475609283-b5a1f0e7c3d9?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: '37',
+    problem: '数列の和(Σ(k=1 , n)k)の一般項は？',
+    formula: 'Σ(k=1 , n)k=n(n+1)/2',
+    imageUrl: 'https://images.unsplash.com/photo-1873948502736-f3e9c0b1a7d5?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: '38',
+    problem: '階差数列(bn=a(n+1)-an)の一般項は？',
+    formula: 'an=a1+Σ(k=1, n-1) bk',
+    imageUrl: 'https://images.unsplash.com/photo-1617382940561-a7b3d9e0c5f1?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: '39',
+    problem: '漸化式(a(n+1)=pan+q)の変形は？',
+    formula: 'a(n+1)-α=p(an-α)',
+    imageUrl: 'https://images.unsplash.com/photo-1827493056871-d9e1f7a3c0b5?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: '40',
+    problem: '漸化式(pa(n+2)+qa(n+1)+ran=0)',
+    formula: 'a(n+2)-αa(n+1)=β(a(n+1)-αan)',
+    imageUrl: 'https://images.unsplash.com/photo-1957382046583-e0a9c7b3f1d5?auto=format&fit=crop&q=80&w=400'
+  },
+  {
+    id: '41',
+    problem: '',
+    formula: '',
+    imageUrl: ''
+  },
+  {
+    id: '42',
     problem: '',
     formula: '',
     imageUrl: ''
