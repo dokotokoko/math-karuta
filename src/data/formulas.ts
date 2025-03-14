@@ -242,7 +242,7 @@ export const formulas: Formula[] = [
   },
   {
     id: '40',
-    problem: '漸化式(pa(n+2)+qa(n+1)+ran=0)',
+    problem: '漸化式(pa(n+2)+qa(n+1)+ran=0)の変形は？',
     formula: 'a(n+2)-αa(n+1)=β(a(n+1)-αan)',
     imageUrl: 'https://images.unsplash.com/photo-1957382046583-e0a9c7b3f1d5?auto=format&fit=crop&q=80&w=400'
   },
