@@ -80,13 +80,13 @@ export const formulas: Formula[] = [
   },
   {
     id: '13',
-    problem: '三角形の面積は？',
+    problem: '三角比を用いた三角形の面積の公式は？',
     formula: 'S=bcsinA/2',
     imageUrl: 'https://images.unsplash.com/photo-1948203756123-d8c5b1e0a9f2?auto=format&fit=crop&q=80&w=400'
   },
   {
     id: '14',
-    problem: '三角形の面積(ヘロンの公式)は？',
+    problem: '三角形の面積の公式(ヘロンの公式)は？',
     formula: 'S=√(s(s-a)(s-b)(s-c))',
     imageUrl: 'https://images.unsplash.com/photo-1758392045876-e1f7a4b6c0d3?auto=format&fit=crop&q=80&w=400'
   },
@@ -152,13 +152,13 @@ export const formulas: Formula[] = [
   },
   {
     id: '25',
-    problem: '2次方程式の解と係数の関係の公式は？',
+    problem: '2次方程式の解と係数の関係は？',
     formula: 'α+β=-b/a , αβ=c/a',
     imageUrl: 'https://images.unsplash.com/photo-1764829304756-d3b0a7f6e1c9?auto=format&fit=crop&q=80&w=400'
   },  
   {
     id: '26',
-    problem: '点と直線の距離の公式は？',
+    problem: '点と直線の距離は？',
     formula: '|ax1+by1+c|/√a^2+b^2',
     imageUrl: 'https://images.unsplash.com/photo-1529384756012-e0a4f9b1c7d3?auto=format&fit=crop&q=80&w=400'
   },
