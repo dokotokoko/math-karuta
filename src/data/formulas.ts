@@ -246,18 +246,4 @@ export const formulas: Formula[] = [
     formula: 'a(n+2)-αa(n+1)=β(a(n+1)-αan)',
     imageUrl: 'https://images.unsplash.com/photo-1957382046583-e0a9c7b3f1d5?auto=format&fit=crop&q=80&w=400'
   },
-  {
-    id: '41',
-    problem: '',
-    formula: '',
-    imageUrl: ''
-  },
-  {
-    id: '42',
-    problem: '',
-    formula: '',
-    imageUrl: ''
-  },
-
-
 ];
