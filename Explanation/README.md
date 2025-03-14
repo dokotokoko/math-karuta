@@ -326,18 +326,36 @@ const [timeLeft, setTimeLeft] = useState(0);                   // 残り時間
 
 ```tsx
 // src/App.tsx
+
+const shuffleFormulas = useCallback(() => {
+let filteredFormulas: typeof formulas = [];
+
+// 配列のインデックスを使って難易度ごとに問題を取得
+if (difficulty === 'beginner') {
+filteredFormulas = formulas.slice(0, 15); // 1〜40個目
+} else if (difficulty === 'intermediate') {
+filteredFormulas = formulas.slice(15, 30); // 41〜50個目
+} else if (difficulty === 'advanced') {
+filteredFormulas = formulas.slice(30, 40); // 51〜60個目
+}
+
+// ランダムにシャッフルして最初の10問を取得
+return filteredFormulas.sort(() => Math.random() - 0.5).slice(0, 10);
+}, [difficulty]);
+
 const startGame = useCallback(() => {
-  const shuffled = shuffleFormulas();            // 公式をシャッフル
-  setDisplayedFormulas(shuffled);                // 表示する公式を設定
-  setCurrentProblem(shuffled[0]);                // 最初の問題を設定
+  const shuffled = shuffleFormulas();           // 選択された難易度の公式をシャッフル
+  setDisplayedFormulas(shuffled);               // 表示する公式を設定
+  setCurrentProblem(shuffled[0]);               // 最初の問題を設定
   setScore({ player: 0, cpu: 0 });              // スコアをリセット
   setProblemCount(0);                           // 問題カウントをリセット
   setGameStarted(true);                         // ゲーム開始フラグをオン
   setShowSelectScreen(false);                   // 選択画面を非表示に
   setGameEnded(false);                          // ゲーム終了フラグをオフ
-  setTimeLeft(difficultySettings[difficulty].timeLimit); // タイマーを設定
+  setTimeLeft(difficultySettings[difficulty].timeLimit);  // 選択した難易度の時間を設定
 }, [difficulty, shuffleFormulas]);
-```
+
+
 
 この関数は難易度選択後に呼び出され、ゲームに必要な全ての状態を初期化します。
 

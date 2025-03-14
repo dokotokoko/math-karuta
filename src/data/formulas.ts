@@ -290,9 +290,74 @@ export const formulas: Formula[] = [
   },
   {
     id:'41',
-    problem:'sin75°',
+    problem:'sin75°=?',
     formula:'sin75°=(√2+√6)/2',
     imageUrl:'https://images.unsplash.com/photo-1847293056728-b6e3a7c9d1f0?auto=format&fit=crop&q=80&w=400',
     level:'中級'
-  }
+  },
+
+  {
+    id:'42',
+    problem:'sinθ=√3/2 , θ=?',
+    formula:'π/3 , 2π/3   (60° , 120°)',
+    imageUrl:'https://images.unsplash.com/photo-1629384756103-c8d2f9b5a1e7?auto=format&fit=crop&q=80&w=400',
+    level:'中級'
+  },
+  {
+    id:'43',
+    problem:'sinθ=2/3 のとき cosθ=? ',
+    formula:'(√5)/3',
+    imageUrl:'https://images.unsplash.com/photo-1973845609284-e1f0a3d7c6b9?auto=format&fit=crop&q=80&w=400',
+    level:'中級'
+  },
+  {
+    id:'44',
+    problem:'△ABCにおいて外接円の半径をRとすると、b=4 , B=30° , C=105° のとき a と R を求めよ',
+    formula:'4√2',
+    imageUrl:'https://images.unsplash.com/photo-1758293045617-f2b7c0a9d5e1?auto=format&fit=crop&q=80&w=400',
+    level:'中級'
+  },
+  {
+    id:'45',
+    problem:'△ABCにおいて、∠A = 30°、∠B = 45°、辺a=10のとき辺bの長さを求めよ',
+    formula:'10√2',
+    imageUrl:'https://images.unsplash.com/photo-1682736450921-a5d9f3c1e7b0?auto=format&fit=crop&q=80&w=400',
+    level:'中級'
+  },
+  {
+    id:'46',
+    problem:'△ABCにおいて、∠A=60°、∠A=40° , 辺b=10  のとき辺aの長さを求めよ',
+    formula:'4√6',
+    imageUrl:'https://images.unsplash.com/photo-1538472905618-b1e9a6d3c7f0?auto=format&fit=crop&q=80&w=400',
+    level:'中級'
+  },
+  {
+    id:'47',
+    problem:'△ABCにおいて、辺a=12、c=18、∠C=50°  のとき∠Ａを求めよ',
+    formula:'(2/3)sin50°',
+    imageUrl:'https://images.unsplash.com/photo-1874928375601-c3f7d0a5b9e1?auto=format&fit=crop&q=80&w=400',
+    level:'中級'
+  },
+  {
+    id:'48',
+    problem:'',
+    formula:'',
+    imageUrl:'',
+    level:''
+  },
+  {
+    id:'49',
+    problem:'',
+    formula:'',
+    imageUrl:'',
+    level:''
+  },
+  {
+    id:'50',
+    problem:'',
+    formula:'',
+    imageUrl:'',
+    level:''
+  },
+  
 ];
