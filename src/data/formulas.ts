@@ -50,7 +50,7 @@ export const formulas: Formula[] = [
   },
   {
     id: '8',
-    problem: '三角関数の相互関係は？',
+    problem: '三角比の相互関係は？',
     formula: 'sin²θ + cos²θ = 1',
     imageUrl: 'https://images.unsplash.com/photo-1648737962984-329ed8aba72d?auto=format&fit=crop&q=80&w=400'
   },
