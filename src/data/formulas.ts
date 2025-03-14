@@ -87,7 +87,7 @@ export const formulas: Formula[] = [
   {
     id: '14',
     problem: '三角形の面積(ヘロンの公式)は？',
-    formula: 'S=√s(s-a)(s-b)(s-c)',
+    formula: 'S=√(s(s-a)(s-b)(s-c))',
     imageUrl: 'https://images.unsplash.com/photo-1758392045876-e1f7a4b6c0d3?auto=format&fit=crop&q=80&w=400'
   },
   {
@@ -201,7 +201,7 @@ export const formulas: Formula[] = [
   {
     id: '33',
     problem: '定積分の公式は？',
-    formula: '∫[a,b] f(x)dx=[F(x)] [a,b]=F(b)-F(a)',
+    formula: '∫[a,b]f(x)dx=[F(x)][a,b]=F(b)-F(a)',
     imageUrl: 'https://images.unsplash.com/photo-1657382940672-e9b1a4f3c0d7?auto=format&fit=crop&q=80&w=400'
   },
   {
@@ -225,13 +225,13 @@ export const formulas: Formula[] = [
   {
     id: '37',
     problem: '数列の和(Σ(k=1 , n)k)の一般項は？',
-    formula: 'Σ(k=1 , n)k=n(n+1)/2',
+    formula: 'Σ(k=1,n)k=n(n+1)/2',
     imageUrl: 'https://images.unsplash.com/photo-1873948502736-f3e9c0b1a7d5?auto=format&fit=crop&q=80&w=400'
   },
   {
     id: '38',
     problem: '階差数列(bn=a(n+1)-an)の一般項は？',
-    formula: 'an=a1+Σ(k=1, n-1) bk',
+    formula: 'an=a1+Σ(k=1,n-1) bk',
     imageUrl: 'https://images.unsplash.com/photo-1617382940561-a7b3d9e0c5f1?auto=format&fit=crop&q=80&w=400'
   },
   {
