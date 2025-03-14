@@ -288,4 +288,11 @@ export const formulas: Formula[] = [
     imageUrl: 'https://images.unsplash.com/photo-1957382046583-e0a9c7b3f1d5?auto=format&fit=crop&q=80&w=400',
     level: '初級'
   },
+  {
+    id:'41',
+    problem:'sin75°',
+    formula:'sin75°=(√2+√6)/2',
+    imageUrl:'https://images.unsplash.com/photo-1847293056728-b6e3a7c9d1f0?auto=format&fit=crop&q=80&w=400',
+    level:'中級'
+  }
 ];
