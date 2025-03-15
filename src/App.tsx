@@ -40,19 +40,20 @@ function App() {
   };
 
   const shuffleFormulas = useCallback(() => {
-    return [...formulas].sort(() => Math.random() - 0.5).slice(0, 10);
-  }, []);
+    const filteredFormulas=formulas.filter(f=>f.difficulty === difficulty);
+    return filteredFormulas.sort(() => Math.random() - 0.5).slice(0, 10);
+  }, [difficulty]);
 
   const startGame = useCallback(() => {
-    const shuffled = shuffleFormulas();
-    setDisplayedFormulas(shuffled);
-    setCurrentProblem(shuffled[0]);
-    setScore({ player: 0, cpu: 0 });
-    setProblemCount(0);
-    setGameStarted(true);
-    setShowSelectScreen(false);
-    setGameEnded(false);
-    setTimeLeft(difficultySettings[difficulty].timeLimit);
+    const shuffled = shuffleFormulas();  // 選択された難易度の公式をシャッフル
+    setDisplayedFormulas(shuffled);      // 表示する公式を設定
+    setCurrentProblem(shuffled[0]);      // 最初の問題を設定
+    setScore({ player: 0, cpu: 0 });     // スコアをリセット
+    setProblemCount(0);                  // 問題カウントをリセット
+    setGameStarted(true);                // ゲーム開始フラグをオン
+    setShowSelectScreen(false);          // 選択画面を非表示に
+    setGameEnded(false);                 // ゲーム終了フラグをオフ
+    setTimeLeft(difficultySettings[difficulty].timeLimit); // 選択した難易度の時間を設定
   }, [difficulty, shuffleFormulas]);
 
   const handleFormulaClick = useCallback((formula: typeof formulas[0]) => {
