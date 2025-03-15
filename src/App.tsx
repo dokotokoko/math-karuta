@@ -12,7 +12,7 @@ interface DifficultyConfig {
 const difficultySettings: Record<Difficulty, DifficultyConfig> = {
   beginner: { timeLimit: 120, cpuErrorRate: 0.3 },
   intermediate: { timeLimit: 60, cpuErrorRate: 0.15 },
-  advanced: { timeLimit: 30, cpuErrorRate: 0.02 }
+  advanced: { timeLimit: 80000, cpuErrorRate: 0.02 }
 };
 
 function App() {
