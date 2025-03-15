@@ -17,7 +17,7 @@ const sounds = {
     volume: 0.6
   }),
   wrong: new Howl({
-    src: ['https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3'],
+    src: ['https://audio-previews.elements.envatousercontent.com/files/210354847/preview.mp3'],
     volume: 0.6
   }),
   win: new Howl({
@@ -47,4 +47,4 @@ export function useSound() {
     Object.values(sounds).forEach(sound => sound.stop());
   }, []);
 
-  return
+  return}

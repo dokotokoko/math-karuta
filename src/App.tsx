@@ -32,7 +32,7 @@ function App() {
     if (muted) return;
     const sounds = {
       correct: 'https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3',
-      wrong: 'https://assets.mixkit.co/active_storage/sfx/2003/2003-preview.mp3',
+      wrong: 'https://audio-previews.elements.envatousercontent.com/files/210354847/preview.mp3',
       win: 'https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3',
       lose: 'https://assets.mixkit.co/active_storage/sfx/1430/1430-preview.mp3'
     };
