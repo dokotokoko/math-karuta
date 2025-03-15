@@ -340,192 +340,289 @@ export const formulas: Formula[] = [
   },
   {
     id:'48',
-    problem:'',
-    formula:'',
+    problem:'△ABC において、辺 a=7、辺 b=5、∠C = 60° のとき、辺 c の長さを求めよ。',
+    formula:'c^2=72+52−2×7×5×cos60∘ , c^2=49+25−2×7×5×1/2 , c^2=49+25−35 , c^2=39 c=√39​',
     imageUrl:'https://images.unsplash.com/photo-1928374650917-c3f7d0a5b9e1?auto=format&fit=crop&q=80&w=401',
     level:'中級'
   },
   {
     id:'49',
-    problem:'',
-    formula:'',
+    problem:'△ABC において、辺 a=8、辺 b=6、辺 c=10 のとき、∠C の大きさを求めよ。',
+    formula:'余弦定理より cosC=(a^2+b^2−c^2)/2ab​=(8^2+6^2−10^2)/(2*8*6)=(64+36−100)/96​=0/96​=0 C=90∘(0<C<120より)   よって∠C=90°',
     imageUrl:'https://images.unsplash.com/photo-1649203756182-d9a1b3e7f0c6?auto=format&fit=crop&q=80&w=402',
     level:'中級'
   },
   {
     id:'50',
-    problem:'',
-    formula:'',
+    problem:'△ABC において、辺 b=8、辺 c=10、∠A = 30° のとき、三角形の面積 S を求めよ。',
+    formula:'面積の公式  S=(1/2)​bcsinAに代入すると、S=(1/2)​×8×10×sin30∘=(1/2)×8×10×(1/2)=(1/2)​×40=20  答え:20',
     imageUrl:'https://images.unsplash.com/photo-1783928465013-e7c5f1d3a0b9?auto=format&fit=crop&q=80&w=403',
     level:'中級'
   },
   {
     id:'51',
-    problem:'',
-    formula:'',
+    problem:'△ABC において、辺 b=12、辺 c=15、∠A = 45° のとき、三角形の面積 S を求めよ。',
+    formula:'S=(1/2)​×12×15×sin45∘=(1/2)​×12×15×(√2)/2​​=90×(√2​)/2​=​​ 90√2​',
     imageUrl:'https://images.unsplash.com/photo-1567382940612-a0b6d9e3c7f1?auto=format&fit=crop&q=80&w=404',
     level:'中級'
   },
   {
     id:'52',
-    problem:'',
-    formula:'',
+    problem:'三角形の3辺が a=7, b=8, c=9 のとき、三角形の面積 S を求めよ。',
+    formula:'まず、半周長 s を求める s=(7+8+9)/2​​=12  ヘロンの公式に代入すると、S=√(12(12−7)(12−8)(12−9))​=√(12×5×4×3)​=√720​=6√2',
     imageUrl:'https://images.unsplash.com/photo-1983745608291-f1c3b9a7d0e5?auto=format&fit=crop&q=80&w=405',
     level:'中級'
   },
   {
     id:'53',
-    problem:'',
-    formula:'',
+    problem:'三角形の3辺が a=6, b=8, c=10 で、内接円の半径が r=2 のとき、三角形の面積 S を求めよ。',
+    formula:'S=2×(6+8+10)/2​=24​',
     imageUrl:'https://images.unsplash.com/photo-1438729056384-d3e0a9f7b1c5?auto=format&fit=crop&q=80&w=406',
     level:'中級'
   },
   {
     id:'54',
-    problem:'',
-    formula:'',
+    problem:'2x^2−3x−5=0  この二次方程式を解け。',
+    formula:'x=(−(−3)±√((−3)2−4(2)(−5)))​​ /2*2=(3±√(9+40​))​/4=(3±7)/4  答え： x=2.5,−1',
     imageUrl:'https://images.unsplash.com/photo-1892738465012-b9a7f1c0d3e6?auto=format&fit=crop&q=80&w=407',
     level:'中級'
   },
   {
     id:'55',
-    problem:'',
-    formula:'',
+    problem:'x^2−6x+8=0 この二次方程式を解け。',
+    formula:'x=(−(−6)±√((−6)2−4(1)(8)​​))/2*1=(6±(36−32))​​/2=(6±4)​​/2  答え： x=4,2',
     imageUrl:'https://images.unsplash.com/photo-1764829376501-e5d7c1a3b9f0?auto=format&fit=crop&q=80&w=408',
     level:'中級'
   },
   {
     id:'56',
-    problem:'',
-    formula:'',
+    problem:'半径 r=5 cm の円の面積を求めよ。（π は 3.14 とする）',
+    formula:'S=3.14×5^2=3.14×25=78.5  答え： 78.5 cm²',
     imageUrl:'https://images.unsplash.com/photo-1529384756019-c1f0b7e9d5a3?auto=format&fit=crop&q=80&w=409',
     level:'中級'
   },
   {
     id:'57',
-    problem:'',
-    formula:'',
+    problem:'面積が 314 cm² の円の半径 r を求めよ。（π は 3.14 とする）',
+    formula:'314=3.14×r^2 , r^2=314/3.14​ =100 ,  r=√100​=10    答え： 10 cm',
     imageUrl:'https://images.unsplash.com/photo-1983745610928-a3d5f9c7e0b1?auto=format&fit=crop&q=80&w=410',
     level:'中級'
   },
   {
     id:'58',
-    problem:'',
-    formula:'',
+    problem:'底辺 a=6 cm、高さ b=8 cm の直角三角形において、斜辺 c の長さを求めなさい。',
+    formula:'三平方の定理より、c^2=6^2+8^2=36+64=100  c=√100​=10  答え： 10 cm',
     imageUrl:'https://images.unsplash.com/photo-1638492075619-f7b3d0e9c1a5?auto=format&fit=crop&q=80&w=411',
     level:'中級'
   },
   {
     id:'59',
-    problem:'',
-    formula:'',
+    problem:'二つの相似な三角形があります。小さい三角形の面積が 36 cm²、大きい三角形の面積が 144 cm² です。このとき、二つの三角形の相似比 k を求めなさい。',
+    formula:'相似比と面積比の関係は、S1​:S2​=k^2  面積比が 1/4 ですので、相似比 k は、k^2=1/4​ k=1/2  ​​​答え： 相似比 k=1/2',
     imageUrl:'https://images.unsplash.com/photo-1638492075619-e9a5b0c3d7f1?auto=format&fit=crop&q=80&w=412',
     level:'中級'
   },
   {
     id:'60',
-    problem:'',
-    formula:'',
+    problem:'5人の学生（A, B, C, D, E）が、1列に並ぶ方法は何通りですか？',
+    formula:'順列の公式を使います。順列の数は、n人の中からすべてを並べる場合、n!（nの階乗）で求めます。ここではn=5なので、5! = 5 × 4 × 3 × 2 × 1 = 120  したがって、5人が並ぶ方法は 120通り です。',
     imageUrl:'https://images.unsplash.com/photo-1859302746512-d0f1c9e7b3a5?auto=format&fit=crop&q=80&w=413',
     level:'中級'
   },
   {
     id:'61',
-    problem:'',
-    formula:'',
-    imageUrl:'',
+    problem:'6人の学生（A, B, C, D, E, F）が円形のテーブルに座る場合、何通りの座り方が可能ですか？',
+    formula:'円順列では、円の回転による重複を避けるため、1人の位置を固定し、残りのn-1人を並べる方法を考えます。ここでは6人なので、円順列の数は (n-1)! です。したがって、6人の場合、(6-1)! = 5! = 5 × 4 × 3 × 2 × 1 = 120  したがって、6人が円形のテーブルに座る方法は 120通り です。',
+    imageUrl:'https://images.unsplash.com/photo-1492837561047-b3e7a9d1f0c5?auto=format&fit=crop&q=80&w=414',
     level:'中級'
   },
   {
     id:'62',
-    problem:'',
-    formula:'',
-    imageUrl:'',
+    problem:'3つの異なる珠（赤、青、緑）を使って、じゅず（数珠）のように並べる方法は何通りですか？ただし、じゅずは回転や反転しても同じものとします。',
+    formula:'じゅず順列では、円順列に加えて反転も同じと考えるため、通常の順列数を2で割ったものが答えとなります。まず、3つの珠を並べる場合、順列の数は 3! です。3! = 3 × 2 × 1 = 6   しかし、じゅずでは回転や反転しても同じと見なすため、6通りを2で割ります。したがって、じゅず順列の場合の並べ方は、6 ÷ 2 = 3通り  したがって、3つの異なる珠を使ってじゅずを作る方法は 3通り です。',
+    imageUrl:'https://images.unsplash.com/photo-1728493756012-f9c5d3b7a1e0?auto=format&fit=crop&q=80&w=415',
     level:'中級'
   },
   {
     id:'63',
-    problem:'',
-    formula:'',
-    imageUrl:'',
+    problem:'3種類の異なるボール（赤、青、緑）があり、これらのボールを使って4個のボールを並べる方法は何通りありますか？同じ種類のボールを複数回使っても構いません。',
+    formula:'重複順列の場合、各位置に異なる選択肢があり、選択肢が重複してもよいので、順列の数は n^r で求めます。ここで、n は選択肢の種類の数（今回は3種類のボール）、r は並べる数（今回は4個のボール）。したがって、重複順列の数は、3^4=3×3×3×3=81  したがって、4個のボールを並べる方法は 81通り です。',
+    imageUrl:'https://images.unsplash.com/photo-1902837465091-e0d1a3f5c9b7?auto=format&fit=crop&q=80&w=416',
     level:'中級'
   },
   {
     id:'64',
-    problem:'',
-    formula:'',
-    imageUrl:'',
+    problem:'8人の中から3人を選んで、グループを作る方法は何通りありますか？',
+    formula:'組み合わせの場合、順番は関係なく、選ぶ人数が重要です。組み合わせの数は以下の公式で求めます。組み合わせの数=n!​/r!(n−r)!  ここで、n=8（選べる人数）、r=3（選ぶ人数）。したがって、8!/(3!(8−3)!)​=8×7×6/3×2×1​=56  したがって、8人の中から3人を選ぶ方法は 56通り です。',
+    imageUrl:'https://images.unsplash.com/photo-1657382946012-c7b1e9a5d0f3?auto=format&fit=crop&q=80&w=417',
     level:'中級'
   },
   {
     id:'65',
-    problem:'',
-    formula:'',
-    imageUrl:'',
+    problem:'5種類の異なる果物（りんご、バナナ、オレンジ、ぶどう、みかん）があり、これらから3個の果物を選ぶ方法は何通りありますか？同じ果物を複数回選んでもかまいません。',
+    formula:'n=5（選べる人数）、r=3（選ぶ人数）。₇Ｃ₃=7*6*5/3*2*1=35  よって35通り',
+    imageUrl:'https://images.unsplash.com/photo-1483759203849-a1f3d7c5e9b0?auto=format&fit=crop&q=80&w=418',
     level:'中級'
   },
   {
     id:'66',
-    problem:'',
-    formula:'',
-    imageUrl:'',
+    problem:'サイコロを2回投げるとき、出た目の合計が7になる確率を求めて下さい',
+    formula:'サイコロを1回投げるときの目は1から6までの6通りです。サイコロを2回投げる場合、全体の組み合わせ数は 6×6=36 通りです。合計が7になる場合、以下の組み合わせがあります： 1回目が1、2回目が6（1, 6） 1回目が2、2回目が5（2, 5） 1回目が3、2回目が4（3, 4） 1回目が4、2回目が3（4, 3） 1回目が5、2回目が2（5, 2） 1回目が6、2回目が1（6, 1） したがって、合計が7になる組み合わせは6通りです。確率は、望ましい結果の数を全体の結果数で割ったものですので、確率=6/36​=1/6 ​したがって、サイコロを2回投げて出た目の合計が7になる確率は 1/6​ です。',
+    imageUrl:'https://images.unsplash.com/photo-1592837461059-d5e9c3b1a7f0?auto=format&fit=crop&q=80&w=419',
     level:'中級'
   },
   {
     id:'67',
-    problem:'',
-    formula:'',
-    imageUrl:'',
-    level:'中級'
+    problem:'赤玉5個、青玉4個が入っている袋から、玉を1個取り出し、それをもとに戻さないで、続いてもう1個取り出す。1回目に赤玉が出たとき、2回目も赤玉が出る確率を求めよ。',
+    formula:'1回目に赤玉を取り出すという事象をA、2回目に赤玉を取り出すという事象をBとする。求める確率はPA(B)　1回目に赤玉が出たとき、2回目は赤玉4個、青玉4個の計8個の中から玉を取り出すことになるからPA(B)=4/8=1/2　よって1/2',
+    imageUrl:'https://images.unsplash.com/photo-1938475608293-b0a7f9c1d3e5?auto=format&fit=crop&q=80&w=420',
+    level:'上級'
   },
   {
     id:'68',
-    problem:'',
-    formula:'',
-    imageUrl:'',
-    level:'中級'
+    problem:'コインを2回投げるとき、1回目で表が出て、2回目でも表が出る確率を求めなさい。',
+    formula:'コインを1回投げるとき、表が出る確率は 21​ です。1回目と2回目が独立した事象であるため、確率の乗法定理を使って、1回目に表が出る確率と2回目に表が出る確率を掛け算します。したがって、1回目で表、2回目で表が出る確率は次のように計算できます： P(表, 表)=P(1回目表)×P(2回目表)=21​×21​=41​   したがって、1回目と2回目の両方で表が出る確率は 41​ です。',
+    imageUrl:'https://images.unsplash.com/photo-1873948502739-f3d0c7b5a1e9?auto=format&fit=crop&q=80&w=421',
+    level:'上級'
   },
   {
     id:'69',
-    problem:'',
-    formula:'',
-    imageUrl:'',
+    problem:'次の2次方程式 x^2−5x+6=0 の解と係数の関係を求めなさい。',
+    formula:'2次方程式 ax^2+bx+c=0 の解と係数の関係は次のようになります。解の和 x1​+x2​=−b/a  ​解の積 x1​⋅x2​=c/a   ここで、与えられた方程式 x^2−5x+6=0 では、係数は次のようになります。a=1,b=−5,c=6 したがって、解の和と解の積は次のように計算できます。解の和：x1​+x2​=−b/a​=(−5)/(-1)​=5  解の積：x1​⋅x2​=c/a​=6/1​=6  したがって、この方程式の解の和は 5、解の積は 6 です。',
+    imageUrl:'https://images.unsplash.com/photo-1617382940651-e7a1b9d3f5c0?auto=format&fit=crop&q=80&w=422',
     level:'中級'
   },
   {
     id:'70',
-    problem:'',
-    formula:'',
-    imageUrl:'',
-    level:'中級'
+    problem:'次の3次方程式 x^3−4x^2+5x−2=0 の解と係数の関係を求めなさい。',
+    formula:'3次方程式 ax^3+bx^2+cx+d=0 の解と係数の関係は次のようになります。	解の和 x1​+x2​+x3​=−b/a​	解の積 x1​⋅x2​⋅x3​=-d/a​	解の2つの積の和 x1​*x2​+x1*​x3​+x2*​x3​=c/a​	ここで、与えられた方程式 x3−4x2+5x−2=0 の係数は次のようになります：	a=1	,b=−4,c=5,d=−2	解の和	x1​+x2​+x3​=−b/a​=(−4)/(−1)​=4	解の積	x1​⋅x2​⋅x3​=−d/d​=(−2)/(-1)​=2	解の2つの積の和	x1​x2​+x1​x3​+x2​x3​=c/a​=5/1​=5	したがって、この方程式の解に関する関係は次の通りです：	解の和： x1​+x2​+x3​=4	解の積： x1​⋅x2​⋅x3​=2	解の2つの積の和： x1​x2​+x1​x3​+x2​x3​=5	',
+    imageUrl:'https://images.unsplash.com/photo-1827493056782-c5f9d1b3e0a7?auto=format&fit=crop&q=80&w=423',
+    level:'上級'
   },
   {
     id:'71',
-    problem:'',
-    formula:'',
-    imageUrl:'',
+    problem:'点(2，8)と直線3x-2y+4=0の距離を求めて下さい',
+    formula:'点 (2,8) と直線 3x−2y+4=0 の距離を求めるためには、点と直線の距離を求める公式を使用します。d=​∣3(2)−2(8)+4∣​/√(3^2+(−2)^2)=∣−6∣/√13=6/√13 したがって、点 (2,8) と直線 3x−2y+4=0 の距離は 6/√13​​ ',
+    imageUrl:'https://images.unsplash.com/photo-1957382046582-d1b7a3e5f9c0?auto=format&fit=crop&q=80&w=424',
     level:'中級'
   },
   {
     id:'72',
-    problem:'',
-    formula:'',
-    imageUrl:'',
+    problem:'中心が点 (3,−2) で半径が 5 の円の方程式を求めなさい。',
+    formula:'(x−3)2+(y+2)2=5^2=25',
+    imageUrl:'https://images.unsplash.com/photo-1748392057612-a9c3f7b0d1e5?auto=format&fit=crop&q=80&w=425',
     level:'中級'
   },
   {
     id:'73',
-    problem:'',
-    formula:'',
-    imageUrl:'',
-    level:'中級'
+    problem:'sin(30∘+45∘)　この式を加法定理を使って簡単にしなさい。',
+    formula:'sin(30∘+45∘)=sin30∘cos45∘+cos30∘sin45∘  それぞれの三角関数の値を代入します。sin30∘=21​,cos30∘=23​​,sin45∘=22​​,cos45∘=22​​  これを式に代入すると、sin(30∘+45∘)=(21​×22​​)+(23​​×22​​) sin(30∘+45∘)=42​​+46​​',
+    imageUrl:'https://images.unsplash.com/photo-1629483756018-b5d3e1a9f0c7?auto=format&fit=crop&q=80&w=426',
+    level:'上級'
   },
   {
     id:'74',
-    problem:'',
-    formula:'',
-    imageUrl:'',
+    problem:'sinθ-cosθ をrsin(θ+α)の形の変形しなさい',
+    formula:'P(1,-1)とするとOP=√(1^2+(-1)^2)=√2 , 線分OPがx軸の正の向きとなす角は -π/4 、 よってsinθ-cosθ=√2sin(θ-π/4)',
+    imageUrl:'https://images.unsplash.com/photo-1938475602918-e1f5c9b7a3d0?auto=format&fit=crop&q=80&w=427',
     level:'中級'
   },
-  
+  {
+    id:'75',
+    problem:'次の指数関数の値を求めなさい。(1) 25 の値を求めよ。(2) 34 の値を求めよ。(3) 5x=125 のとき、x の値を求めよ。',
+    formula:'(1) 25=2×2×2×2×2=32(2) 34=3×3×3×3=81(3) 5x=125 のとき、125は5の累乗なので、125=3^5よって、指数を比較すると x=3 となる。',
+    imageUrl:'https://images.unsplash.com/photo-1758392045619-d3a7b5f0e1c9?auto=format&fit=crop&q=80&w=428',
+    level:'中級'
+  },
+  {
+    id:'76',
+    problem:'次の対数の値を求めなさい。(1) log₂​8 の値を求めよ。(2) log₅25 の値を求めよ。(3) log₃​81=x のとき、x の値を求めよ。(4) log₃x+log₃(x-2)=1　この方程式を解け',
+    formula:'(1) log₂​8 は、「2を何乗すると8になるか」を求める問題。2^3  よって、log₂​8=3   (2)  log₅​25 は、「5を何乗すると25になるか」を求める問題。5^2=25 よって、log₅​25=2 (3) log₃​81=x のとき、指数の形に直すと3^x=81よって、x=4  (4) 真数条件よりx>0かつx-2>0よりx>2 , log₃x+log₃(x-2)=log₃x(x-2)=log₃3 ,  x(x-2)=3 , x= -1,3 , 真数条件よりx=3',
+    imageUrl:'https://images.unsplash.com/photo-1682940375123-b9e3c1d5a7f0?auto=format&fit=crop&q=80&w=429',
+    level:'中級'
+  },
+  {
+    id:'77',
+    problem:'曲線 y=x^2+2x+1 上の点 (1,4) における接線の方程式を求めなさい。',
+    formula:'微分して接線の傾きを求める  曲線の方程式 y=x^2+2x+1 を微分すると、接線の傾きはdy​/dx=2x+2  点 (1,4) での接線の傾きを求めるために、x=1 を代入すると 2(1)+2=4  よって、接線の傾きは 4 である。 (x1​,y1​)=(1,4)、(傾き)=4 を代入すると y−4=4(x−1)  y=4x−4+4 y=4x  答え：接線の方程式はy=4x',
+    imageUrl:'https://images.unsplash.com/photo-1537482093847-c1d9a5f7b3e0?auto=format&fit=crop&q=80&w=430',
+    level:'上級'
+  },
+  {
+    id:'78',
+    problem:'曲線 y=x^2 上の点 (1,1) における法線の方程式を求めなさい。',
+    formula:'法線の方程式を求めるには、まず接線の傾きを求め、それに垂直な直線の傾きを使います。曲線の微分を求める。曲線 y=x^2 を微分すると、接線の傾きはdy/dx​=2x したがって、点 (1,1) での接線の傾きは 2(1)=2 法線の傾きを求める。法線は接線と垂直なので、傾きは接線の傾き 2 の負の逆数になるので(傾き)=−1/2   点(1,1)、(傾き) −1/2​ を代入すると y−1=(−1/2)​(x−1)  y=(−1/2)x+1/2+1  ,  y=(−1/2)​x+3/2​   答え：法線の方程式は y=(−1/2)x+3/2',
+    imageUrl:'https://images.unsplash.com/photo-1875932018476-f7b1e0a3d5c9?auto=format&fit=crop&q=80&w=431',
+    level:'上級'
+  },
+  {
+    id:'79',
+    problem:'∫(3x^2+2x+1)dx の不定積分を求めて下さい',
+    formula:'x^3+x^2+x+C',
+    imageUrl:'https://images.unsplash.com/photo-1928475603929-d0f3a9c7b1e5?auto=format&fit=crop&q=80&w=432',
+    level:'中級'
+  },
+  {
+    id:'80.',
+    problem:'∫[0,2]​(3x^2+2x)dx   この定積分の値を求めなさい。',
+    formula:'[x^3+x^2][0,2]=12',
+    imageUrl:'https://images.unsplash.com/photo-1649283746103-a5c7d9b3f1e0?auto=format&fit=crop&q=80&w=433',
+    level:'中級'
+  },
+  {
+    id:'81',
+    problem:' y=x2 と直線 y=4 で囲まれる部分の面積を求めよ',
+    formula:' y=x^2 と y=4 の交点を求める交点は x=±2 したがって、積分範囲は x=−2 から x=2 まで。面積は、上の関数 y=4 から下の関数 y=x^2 を引いた積分：∫[−2,2]​(4−x^2)dx=​ [4x−3x3​][−2,2​]=(4(2)−323​)−(4(−2)−3(−2)3​) =(8−38​)−(−8+38​) =(324​−38​)−(−324​+38​) =316​+316​=332​',
+    imageUrl:'https://images.unsplash.com/photo-1783946502838-e3b0f9d1a5c7?auto=format&fit=crop&q=80&w=433',
+    level:'中級'
+  },
+  {
+    id:'82',
+    problem:'数列 2,6,10,14,18,… の一般項を求めなさい',
+    formula:'数列 2,6,10,14,18,… の場合、初項 a1​=2、公差 d=4 なので、an​=2+(n−1)×4 =2+4n−4 =4n−2  答え： an​=4n−2',
+    imageUrl:'https://images.unsplash.com/photo-1567382910457-c9d7a3e5b1f0?auto=format&fit=crop&q=80&w=433',
+    level:'中級'
+  },
+  {
+    id:'83',
+    problem:'数列 2,6,10,14,18 の和を求めなさい。',
+    formula:'初項 a1​=2、末項 a5​=18、項数 n=5  S5​=25​×(2+18) =25​×20​=50',
+    imageUrl:'https://images.unsplash.com/photo-1982736450913-b1f0c3d9a7e5?auto=format&fit=crop&q=80&w=433',
+    level:'中級'
+  },
+  {
+    id:'84',
+    problem:'数列 5,10,20,40,… の一般項を求めなさい',
+    formula:'初項 a1​=5、公比 r=2 なので、an​=5×2^(n−1)',
+    imageUrl:'https://images.unsplash.com/photo-1438572093849-f5d3a9b7c1e0?auto=format&fit=crop&q=80&w=433',
+    level:'中級'
+  },
+  {
+    id:'85',
+    problem:'初項 3、公比 2、項数 5 の等比数列の和をもとめなさい',
+    formula:'S5​=3(1−2^5)​ /(1−2)=-3(1−32)​=−3(−31)​ =93',
+    imageUrl:'https://images.unsplash.com/photo-1438572093849-f5d3a9b7c1e0?auto=format&fit=crop&q=80&w=433',
+    level:'中級'
+  },
+  {
+    id:'86',
+    problem:'階差数列 bn​=an+1​−an​ を用いて、bn​=4 であり、初項 a1​=5 のとき、an​ を求めなさい。',
+    formula:'階差が一定なので、bn​=4 は定数です。したがって、一般項は次のように求められます。a(n+1)​−an​=4  よって  an​=a1​+4(n−1)  初項 a1​=5 を代入して、an​=5+4(n−1)=5+4n−4=4n+1  答え： an​=4n+1',
+    imageUrl:'https://images.unsplash.com/photo-1764829304757-e0b9f7d5c3a1?auto=format&fit=crop&q=80&w=433',
+    level:'上級'
+  },
+  {
+    id:'87',
+    problem:'漸化式 an+1​=2an​+3、初項 a1​=4 のとき、an​ を求めなさい。',
+    formula:'a(n+1)=2an+3 より x=2x+3 の解は x=-3 , よって a(n+1)+3=2(an+3) , an+3=bnとおくと b(n+1)=2bn ,又b1=a1+3=4+3=7 , よって bn=7*2^(n-1)',
+    imageUrl:'https://images.unsplash.com/photo-1529384756013-d1a3c7b5f0e9?auto=format&fit=crop&q=80&w=433',
+    level:'上級'
+  },
+  {
+    id:'88',
+    problem:'a1=0 , a2=1 , a(n+2)=a(n+1)+6an のとき一般項{an}を求めなさい',
+    formula:'a(n+2)=a(n+1)+6anを変形して a(n+2)-a(n+1)-an=0 とする  この式よりx^2-x-6=0を解くとx=3 , -2 となる  α=-2 , β=3 として a(n+2)+2a(n+1)=3(a(n+1)+2an) ・・・⓵ , a(n+2)-3a(n+1)=-2(a(n+1)-3an) ・・・⓶  とおく  ⓵より a(n+1)+2an=bn とおくと b(n+1)=3bn , b1=a2+2a1=1  よってbn=3^(n-1)・・・⓷   a(n+1)-3an=cnとおくとc(n+1)= -2cn , c1=a2-3a1=1  よってcn=(-2)^(n-1)・・・⓸   ⓷⓸よりan=(1/5)(3^(n-1)-(-2)^(n-1))',
+    imageUrl:'https://images.unsplash.com/photo-1983745609284-b5e1d9c3a7f0?auto=format&fit=crop&q=80&w=433',
+    level:'上級'
+  },
 ];
