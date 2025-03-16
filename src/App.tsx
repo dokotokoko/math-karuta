@@ -120,10 +120,10 @@ function App() {
   }, [penaltyTimer]);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-whiteflex flex-col justify-center items-center">
       <div className="container mx-auto px-4 py-8">
-        <div className="text-center mb-8">
-          <h1 className="text-5xl font-bold mb-4" style={{ fontFamily: 'Mamelon' }}>数学かるた</h1>
+        <div className="text-center mb-8 w-full">
+          <h1 className="text-9xl font-bold mb-4" style={{ fontFamily: 'KaiTi, cursive' }}>数学かるた</h1>
           <p className="text-xl mb-4" style={{ fontFamily: 'Mamelon' }}>Mathematical Karuta</p>
           
           <button
