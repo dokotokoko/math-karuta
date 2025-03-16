@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { formulas } from './data/formulas';
 import { Volume2, VolumeX, Trophy, Award } from 'lucide-react';
 
@@ -84,9 +84,11 @@ function App() {
   const endGame = useCallback(() => {
     setGameStarted(false);
     setGameEnded(true);
+    setDisplayedFormulas([]); 
     const playerWon = score.player > score.cpu;
     playSound(playerWon ? 'win' : 'lose');
   }, [score]);
+  
 
   useEffect(() => {
     if (!gameStarted || !currentProblem) return;
