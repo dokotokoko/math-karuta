@@ -467,7 +467,7 @@ export const formulas: Formula[] = [
   {
     id:'66',
     problem:'サイコロを2回投げるとき、出た目の合計が7になる確率を求めて下さい',
-    formula:'1/6​ ',
+    formula:'1/6',
     imageUrl:'https://images.unsplash.com/photo-1592837461059-d5e9c3b1a7f0?auto=format&fit=crop&q=80&w=419',
     level:'中級'
   },
@@ -481,21 +481,21 @@ export const formulas: Formula[] = [
   {
     id:'68',
     problem:'コインを2回投げるとき、1回目で表が出て、2回目でも表が出る確率を求めなさい。',
-    formula:'41 ',
+    formula:'1/4',
     imageUrl:'https://images.unsplash.com/photo-1873948502739-f3d0c7b5a1e9?auto=format&fit=crop&q=80&w=421',
     level:'上級'
   },
   {
     id:'69',
     problem:'次の2次方程式 x^2−5x+6=0 の解と係数の関係より解の和と積をそれぞれ求めなさい。',
-    formula:'解の和は 5、解の積は 6 ',
+    formula:'解の和  5  解の積  6 ',
     imageUrl:'https://images.unsplash.com/photo-1617382940651-e7a1b9d3f5c0?auto=format&fit=crop&q=80&w=422',
     level:'中級'
   },
   {
     id:'70',
     problem:'次の3次方程式 x^3−4x^2+5x−2=0 の解と係数の関係より 解の和、解の積、解の2つの積の和それぞれを求めなさい。',
-    formula:'解の和： 4	解の積： 2	解の2つの積の和： 5	',
+    formula:'解の和  4	解の積  2	解の2つの積の和  5	',
     imageUrl:'https://images.unsplash.com/photo-1827493056782-c5f9d1b3e0a7?auto=format&fit=crop&q=80&w=423',
     level:'上級'
   },
@@ -509,7 +509,7 @@ export const formulas: Formula[] = [
   {
     id:'72',
     problem:'中心が点 (3,−2) で半径が 5 の円の方程式を求めなさい。',
-    formula:'(x−3)2+(y+2)2=5^2=25',
+    formula:'(x−3)2+(y+2)2=25',
     imageUrl:'https://images.unsplash.com/photo-1748392057612-a9c3f7b0d1e5?auto=format&fit=crop&q=80&w=425',
     level:'中級'
   },
@@ -536,8 +536,8 @@ export const formulas: Formula[] = [
   },
   {
     id:'76',
-    problem:'次の対数の値を求めなさい。(1) log₂​8 の値を求めよ。(2) log₅25 の値を求めよ。(3) log₃​81=x のとき、x の値を求めよ。(4) log₃x+log₃(x-2)=1　この方程式を解け',
-    formula:'(1) log₂​8=3   (2)  log₅​25=2 (3) x=4  (4) x=3',
+    problem:'(1) log₂​8 の値を求めよ。(2) log₅25 の値を求めよ。(3) log₃​81=x のとき、x の値を求めよ。(4) log₃x+log₃(x-2)=1　この方程式を解け',
+    formula:'(1) 3   (2)  2 (3) x=4  (4) x=3',
     imageUrl:'https://images.unsplash.com/photo-1682940375123-b9e3c1d5a7f0?auto=format&fit=crop&q=80&w=429',
     level:'中級'
   },
@@ -551,7 +551,7 @@ export const formulas: Formula[] = [
   {
     id:'78',
     problem:'曲線 y=x^2 上の点 (1,1) における法線の方程式を求めなさい。',
-    formula:'法線の方程式を求めるには、まず接線の傾きを求め、それに垂直な直線の傾きを使います。曲線の微分を求める。曲線 y=x^2 を微分すると、接線の傾きはdy/dx​=2x したがって、点 (1,1) での接線の傾きは 2(1)=2 法線の傾きを求める。法線は接線と垂直なので、傾きは接線の傾き 2 の負の逆数になるので(傾き)=−1/2   点(1,1)、(傾き) −1/2​ を代入すると y−1=(−1/2)​(x−1)  y=(−1/2)x+1/2+1  ,  y=(−1/2)​x+3/2​   答え：法線の方程式は y=(−1/2)x+3/2',
+    formula:'y=(−1/2)x+3/2',
     imageUrl:'https://images.unsplash.com/photo-1875932018476-f7b1e0a3d5c9?auto=format&fit=crop&q=80&w=431',
     level:'上級'
   },
@@ -565,63 +565,63 @@ export const formulas: Formula[] = [
   {
     id:'80.',
     problem:'∫[0,2]​(3x^2+2x)dx   この定積分の値を求めなさい。',
-    formula:'[x^3+x^2][0,2]=12',
+    formula:'12',
     imageUrl:'https://images.unsplash.com/photo-1649283746103-a5c7d9b3f1e0?auto=format&fit=crop&q=80&w=433',
     level:'中級'
   },
   {
     id:'81',
-    problem:' y=x2 と直線 y=4 で囲まれる部分の面積を求めよ',
-    formula:' y=x^2 と y=4 の交点を求める交点は x=±2 したがって、積分範囲は x=−2 から x=2 まで。面積は、上の関数 y=4 から下の関数 y=x^2 を引いた積分：∫[−2,2]​(4−x^2)dx=​ [4x−3x3​][−2,2​]=(4(2)−323​)−(4(−2)−3(−2)3​) =(8−38​)−(−8+38​) =(324​−38​)−(−324​+38​) =316​+316​=332​',
+    problem:' y=x^2 と直線 y=4 で囲まれる部分の面積を求めよ',
+    formula:'32/3​',
     imageUrl:'https://images.unsplash.com/photo-1783946502838-e3b0f9d1a5c7?auto=format&fit=crop&q=80&w=433',
     level:'中級'
   },
   {
     id:'82',
     problem:'数列 2,6,10,14,18,… の一般項を求めなさい',
-    formula:'数列 2,6,10,14,18,… の場合、初項 a1​=2、公差 d=4 なので、an​=2+(n−1)×4 =2+4n−4 =4n−2  答え： an​=4n−2',
+    formula:'an​=4n−2',
     imageUrl:'https://images.unsplash.com/photo-1567382910457-c9d7a3e5b1f0?auto=format&fit=crop&q=80&w=433',
     level:'中級'
   },
   {
     id:'83',
     problem:'数列 2,6,10,14,18 の和を求めなさい。',
-    formula:'初項 a1​=2、末項 a5​=18、項数 n=5  S5​=25​×(2+18) =25​×20​=50',
+    formula:'S5​=50',
     imageUrl:'https://images.unsplash.com/photo-1982736450913-b1f0c3d9a7e5?auto=format&fit=crop&q=80&w=433',
     level:'中級'
   },
   {
     id:'84',
     problem:'数列 5,10,20,40,… の一般項を求めなさい',
-    formula:'初項 a1​=5、公比 r=2 なので、an​=5×2^(n−1)',
+    formula:'an​=5×2^(n−1)',
     imageUrl:'https://images.unsplash.com/photo-1438572093849-f5d3a9b7c1e0?auto=format&fit=crop&q=80&w=433',
     level:'中級'
   },
   {
     id:'85',
     problem:'初項 3、公比 2、項数 5 の等比数列の和をもとめなさい',
-    formula:'S5​=3(1−2^5)​ /(1−2)=-3(1−32)​=−3(−31)​ =93',
+    formula:'S5​=93',
     imageUrl:'https://images.unsplash.com/photo-1438572093849-f5d3a9b7c1e0?auto=format&fit=crop&q=80&w=433',
     level:'中級'
   },
   {
     id:'86',
     problem:'階差数列 bn​=an+1​−an​ を用いて、bn​=4 であり、初項 a1​=5 のとき、an​ を求めなさい。',
-    formula:'階差が一定なので、bn​=4 は定数です。したがって、一般項は次のように求められます。a(n+1)​−an​=4  よって  an​=a1​+4(n−1)  初項 a1​=5 を代入して、an​=5+4(n−1)=5+4n−4=4n+1  答え： an​=4n+1',
+    formula:'an​=4n+1',
     imageUrl:'https://images.unsplash.com/photo-1764829304757-e0b9f7d5c3a1?auto=format&fit=crop&q=80&w=433',
     level:'上級'
   },
   {
     id:'87',
     problem:'漸化式 an+1​=2an​+3、初項 a1​=4 のとき、an​ を求めなさい。',
-    formula:'a(n+1)=2an+3 より x=2x+3 の解は x=-3 , よって a(n+1)+3=2(an+3) , an+3=bnとおくと b(n+1)=2bn ,又b1=a1+3=4+3=7 , よって bn=7*2^(n-1)',
+    formula:'an=7*2^(n-1)-3',
     imageUrl:'https://images.unsplash.com/photo-1529384756013-d1a3c7b5f0e9?auto=format&fit=crop&q=80&w=433',
     level:'上級'
   },
   {
     id:'88',
     problem:'a1=0 , a2=1 , a(n+2)=a(n+1)+6an のとき一般項{an}を求めなさい',
-    formula:'a(n+2)=a(n+1)+6anを変形して a(n+2)-a(n+1)-an=0 とする  この式よりx^2-x-6=0を解くとx=3 , -2 となる  α=-2 , β=3 として a(n+2)+2a(n+1)=3(a(n+1)+2an) ・・・⓵ , a(n+2)-3a(n+1)=-2(a(n+1)-3an) ・・・⓶  とおく  ⓵より a(n+1)+2an=bn とおくと b(n+1)=3bn , b1=a2+2a1=1  よってbn=3^(n-1)・・・⓷   a(n+1)-3an=cnとおくとc(n+1)= -2cn , c1=a2-3a1=1  よってcn=(-2)^(n-1)・・・⓸   ⓷⓸よりan=(1/5)(3^(n-1)-(-2)^(n-1))',
+    formula:'an=(1/5)(3^(n-1)-(-2)^(n-1))',
     imageUrl:'https://images.unsplash.com/photo-1983745609284-b5e1d9c3a7f0?auto=format&fit=crop&q=80&w=433',
     level:'上級'
   },
