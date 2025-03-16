@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { formulas } from './data/formulas.ts';
+import { formulas } from './data/formulas';
 import { Volume2, VolumeX, Trophy, Award } from 'lucide-react';
 
 type Difficulty = 'beginner' | 'intermediate' | 'advanced';
