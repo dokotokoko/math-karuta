@@ -544,7 +544,7 @@ export const formulas: Formula[] = [
   {
     id:'77',
     problem:'曲線 y=x^2+2x+1 上の点 (1,4) における接線の方程式を求めなさい。',
-    formula:'微分して接線の傾きを求める  曲線の方程式 y=x^2+2x+1 を微分すると、接線の傾きはdy​/dx=2x+2  点 (1,4) での接線の傾きを求めるために、x=1 を代入すると 2(1)+2=4  よって、接線の傾きは 4 である。 (x1​,y1​)=(1,4)、(傾き)=4 を代入すると y−4=4(x−1)  y=4x−4+4 y=4x  答え：接線の方程式はy=4x',
+    formula:'y=4x',
     imageUrl:'https://images.unsplash.com/photo-1537482093847-c1d9a5f7b3e0?auto=format&fit=crop&q=80&w=430',
     level:'上級'
   },
