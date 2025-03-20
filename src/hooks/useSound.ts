@@ -10,7 +10,7 @@ const sounds = {
   bgmBattle: new Howl({
     src: ['https://assets.mixkit.co/music/preview/mixkit-epic-orchestra-transition-2290.mp3'],
     loop: true,
-    volume: 0.4
+    volume: 0.2
   }),
   correct: new Howl({
     src: ['https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3'],
