@@ -164,7 +164,7 @@ function App() {
                   className="w-full bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors"
                   style={{ fontFamily: 'Mamelon' }}
                 >
-                  上級 (30秒)
+                  上級 (80000秒)
                 </button>
               </div>
             </div>
