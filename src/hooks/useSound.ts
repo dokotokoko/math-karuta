@@ -3,9 +3,9 @@ import { Howl } from 'howler';
 
 const sounds = {
   bgmTitle: new Howl({
-    src: ['https://assets.mixkit.co/music/preview/mixkit-traditional-japanese-music-2285.mp3'],
+    src: ['MusMus-BGM-062'],
     loop: true,
-    volume: 0.5
+    volume: 0.3
   }),
   bgmBattle: new Howl({
     src: ['https://assets.mixkit.co/music/preview/mixkit-epic-orchestra-transition-2290.mp3'],
