@@ -8,17 +8,17 @@ const sounds = {
     volume: 0.3
   }),
   bgmBattle: new Howl({
-    src: ['https://assets.mixkit.co/music/preview/mixkit-epic-orchestra-transition-2290.mp3'],
+    src: ['MusMus-BGM-182'],
     loop: true,
-    volume: 0.2
+    volume: 0.1
   }),
   correct: new Howl({
     src: ['https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3'],
     volume: 0.6
   }),
   wrong: new Howl({
-    src: ['https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3'],
-    volume: 0.6
+    src: ['Quiz-Wrong_Buzzer01-mp3'],
+    volume: 0.4
   }),
   win: new Howl({
     src: ['https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3'],
