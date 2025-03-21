@@ -427,28 +427,28 @@ export const formulas: Formula[] = [
     problem:'5人の学生（A, B, C, D, E）が、1列に並ぶ方法は何通りですか？',
     formula:'120通り ',
     imageUrl:'https://images.unsplash.com/photo-1859302746512-d0f1c9e7b3a5?auto=format&fit=crop&q=80&w=413',
-    level:'上級'
+    level:'中級'
   },
   {
     id:'61',
     problem:'6人の学生（A, B, C, D, E, F）が円形のテーブルに座る場合、何通りの座り方が可能ですか？',
     formula:'120通り ',
     imageUrl:'https://images.unsplash.com/photo-1492837561047-b3e7a9d1f0c5?auto=format&fit=crop&q=80&w=414',
-    level:'上級'
+    level:'中級'
   },
   {
     id:'62',
     problem:'3つの異なる珠（赤、青、緑）を使って、じゅず（数珠）のように並べる方法は何通りですか？ただし、じゅずは回転や反転しても同じものとします。',
     formula:'3通り ',
     imageUrl:'https://images.unsplash.com/photo-1728493756012-f9c5d3b7a1e0?auto=format&fit=crop&q=80&w=415',
-    level:'上級'
+    level:'中級'
   },
   {
     id:'63',
     problem:'3種類の異なるボール（赤、青、緑）があり、これらのボールを使って4個のボールを並べる方法は何通りありますか？同じ種類のボールを複数回使っても構いません。',
     formula:'81通り ',
     imageUrl:'https://images.unsplash.com/photo-1902837465091-e0d1a3f5c9b7?auto=format&fit=crop&q=80&w=416',
-    level:'上級'
+    level:'中級'
   },
   {
     id:'64',
@@ -462,7 +462,7 @@ export const formulas: Formula[] = [
     problem:'5種類の異なる果物（りんご、バナナ、オレンジ、ぶどう、みかん）があり、これらから3個の果物を選ぶ方法は何通りありますか？同じ果物を複数回選んでもかまいません。',
     formula:'35通り',
     imageUrl:'https://images.unsplash.com/photo-1483759203849-a1f3d7c5e9b0?auto=format&fit=crop&q=80&w=418',
-    level:'上級'
+    level:'中級'
   },
   {
     id:'66',
@@ -476,21 +476,21 @@ export const formulas: Formula[] = [
     problem:'赤玉5個、青玉4個が入っている袋から、玉を1個取り出し、それをもとに戻さないで、続いてもう1個取り出す。1回目に赤玉が出たとき、2回目も赤玉が出る確率を求めよ。',
     formula:'1/2',
     imageUrl:'https://images.unsplash.com/photo-1938475608293-b0a7f9c1d3e5?auto=format&fit=crop&q=80&w=420',
-    level:'上級'
+    level:'中級'
   },
   {
     id:'68',
     problem:'コインを2回投げるとき、1回目で表が出て、2回目でも表が出る確率を求めなさい。',
     formula:'1/4',
     imageUrl:'https://images.unsplash.com/photo-1873948502739-f3d0c7b5a1e9?auto=format&fit=crop&q=80&w=421',
-    level:'上級'
+    level:'中級'
   },
   {
     id:'69',
     problem:'次の2次方程式 x^2−5x+6=0 の解と係数の関係より解の和と積をそれぞれ求めなさい。',
     formula:'解の和  5  解の積  6 ',
     imageUrl:'https://images.unsplash.com/photo-1617382940651-e7a1b9d3f5c0?auto=format&fit=crop&q=80&w=422',
-    level:'中級'
+    level:'上級'
   },
   {
     id:'70',
@@ -504,14 +504,14 @@ export const formulas: Formula[] = [
     problem:'点(2，8)と直線3x-2y+4=0の距離を求めて下さい',
     formula:' 6/√13​​ ',
     imageUrl:'https://images.unsplash.com/photo-1957382046582-d1b7a3e5f9c0?auto=format&fit=crop&q=80&w=424',
-    level:'中級'
+    level:'上級'
   },
   {
     id:'72',
     problem:'中心が点 (3,−2) で半径が 5 の円の方程式を求めなさい。',
     formula:'(x−3)2+(y+2)2=25',
     imageUrl:'https://images.unsplash.com/photo-1748392057612-a9c3f7b0d1e5?auto=format&fit=crop&q=80&w=425',
-    level:'中級'
+    level:'上級'
   },
   {
     id:'73',
@@ -525,21 +525,21 @@ export const formulas: Formula[] = [
     problem:'sinθ-cosθ をrsin(θ+α)の形の変形しなさい',
     formula:'sinθ-cosθ=√2sin(θ-π/4)',
     imageUrl:'https://images.unsplash.com/photo-1938475602918-e1f5c9b7a3d0?auto=format&fit=crop&q=80&w=427',
-    level:'中級'
+    level:'上級'
   },
   {
     id:'75',
     problem:'次の指数関数の値を求めなさい。(1) 25 の値を求めよ。(2) 34 の値を求めよ。(3) 5x=125 のとき、x の値を求めよ。',
     formula:'(1) 32 (2) 81 (3) x=3 ',
     imageUrl:'https://images.unsplash.com/photo-1758392045619-d3a7b5f0e1c9?auto=format&fit=crop&q=80&w=428',
-    level:'中級'
+    level:'上級'
   },
   {
     id:'76',
     problem:'(1) log₂​8 の値を求めよ。(2) log₅25 の値を求めよ。(3) log₃​81=x のとき、x の値を求めよ。(4) log₃x+log₃(x-2)=1　この方程式を解け',
     formula:'(1) 3   (2)  2 (3) x=4  (4) x=3',
     imageUrl:'https://images.unsplash.com/photo-1682940375123-b9e3c1d5a7f0?auto=format&fit=crop&q=80&w=429',
-    level:'中級'
+    level:'上級'
   },
   {
     id:'77',
@@ -560,49 +560,49 @@ export const formulas: Formula[] = [
     problem:'∫(3x^2+2x+1)dx の不定積分を求めて下さい',
     formula:'x^3+x^2+x+C',
     imageUrl:'https://images.unsplash.com/photo-1928475603929-d0f3a9c7b1e5?auto=format&fit=crop&q=80&w=432',
-    level:'中級'
+    level:'上級'
   },
   {
     id:'80.',
     problem:'∫[0,2]​(3x^2+2x)dx   この定積分の値を求めなさい。',
     formula:'12',
     imageUrl:'https://images.unsplash.com/photo-1649283746103-a5c7d9b3f1e0?auto=format&fit=crop&q=80&w=433',
-    level:'中級'
+    level:'上級'
   },
   {
     id:'81',
     problem:' y=x^2 と直線 y=4 で囲まれる部分の面積を求めよ',
     formula:'32/3​',
     imageUrl:'https://images.unsplash.com/photo-1783946502838-e3b0f9d1a5c7?auto=format&fit=crop&q=80&w=433',
-    level:'中級'
+    level:'上級'
   },
   {
     id:'82',
     problem:'数列 2,6,10,14,18,… の一般項を求めなさい',
     formula:'an​=4n−2',
     imageUrl:'https://images.unsplash.com/photo-1567382910457-c9d7a3e5b1f0?auto=format&fit=crop&q=80&w=433',
-    level:'中級'
+    level:'上級'
   },
   {
     id:'83',
     problem:'数列 2,6,10,14,18 の和を求めなさい。',
     formula:'S5​=50',
     imageUrl:'https://images.unsplash.com/photo-1982736450913-b1f0c3d9a7e5?auto=format&fit=crop&q=80&w=433',
-    level:'中級'
+    level:'上級'
   },
   {
     id:'84',
     problem:'数列 5,10,20,40,… の一般項を求めなさい',
     formula:'an​=5×2^(n−1)',
     imageUrl:'https://images.unsplash.com/photo-1438572093849-f5d3a9b7c1e0?auto=format&fit=crop&q=80&w=433',
-    level:'中級'
+    level:'上級'
   },
   {
     id:'85',
     problem:'初項 3、公比 2、項数 5 の等比数列の和をもとめなさい',
     formula:'S5​=93',
     imageUrl:'https://images.unsplash.com/photo-1438572093849-f5d3a9b7c1e0?auto=format&fit=crop&q=80&w=433',
-    level:'中級'
+    level:'上級'
   },
   {
     id:'86',
