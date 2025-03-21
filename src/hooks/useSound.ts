@@ -14,11 +14,11 @@ const sounds = {
   }),
   correct: new Howl({
     src: ['https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3'],
-    volume: 0.6
+    volume: 0.2
   }),
   wrong: new Howl({
     src: ['https://audio-previews.elements.envatousercontent.com/files/210354847/preview.mp3'],
-    volume: 0.6
+    volume: 0.2
   }),
   win: new Howl({
     src: ['https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3'],
