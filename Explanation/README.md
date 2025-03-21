@@ -332,11 +332,11 @@ let filteredFormulas: typeof formulas = [];
 
 // 配列のインデックスを使って難易度ごとに問題を取得
 if (difficulty === 'beginner') {
-filteredFormulas = formulas.slice(0, 15); // 1〜40個目
+filteredFormulas = formulas.slice(0, 40); // 1〜40個目
 } else if (difficulty === 'intermediate') {
-filteredFormulas = formulas.slice(15, 30); // 41〜50個目
+filteredFormulas = formulas.slice(41, 68); // 41〜68個目
 } else if (difficulty === 'advanced') {
-filteredFormulas = formulas.slice(30, 40); // 51〜60個目
+filteredFormulas = formulas.slice(69, 88); // 69〜88個目
 }
 
 // ランダムにシャッフルして最初の10問を取得
