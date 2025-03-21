@@ -3,7 +3,7 @@ import { Howl } from 'howler';
 
 const sounds = {
   bgmTitle: new Howl({
-    src: ['MusMus-BGM-062'],
+    src: ['https://www.youtube.com/watch?v=981IQMjsYMw'],
     loop: true,
     volume: 0.3
   }),
