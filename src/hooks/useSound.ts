@@ -9,7 +9,8 @@ const sounds = {
     volume: 0.3
   }),
   bgmBattle: new Howl({
-    src: ['MusMus-BGM-182'],
+    src: @[card](https://www.youtube.com/watch?v=gAWUdddNR7A)
+,
     loop: true,
     volume: 0.1
   }),
