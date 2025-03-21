@@ -15,11 +15,16 @@ const sounds = {
   }),
   correct: new Howl({
     src: ['https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3'],
-    volume: 0.6
+    volume: 0.2
   }),
   wrong: new Howl({
+<<<<<<< HEAD
+    src: ['https://audio-previews.elements.envatousercontent.com/files/210354847/preview.mp3'],
+    volume: 0.2
+=======
     src: ['Quiz-Wrong_Buzzer01-mp3'],
     volume: 0.4
+>>>>>>> 5c0bd49f3f1d03781a4a358428131c0e487dcda4
   }),
   win: new Howl({
     src: ['https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3'],
@@ -48,4 +53,4 @@ export function useSound() {
     Object.values(sounds).forEach(sound => sound.stop());
   }, []);
 
-  return
+  return}
