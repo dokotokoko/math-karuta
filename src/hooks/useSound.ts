@@ -3,22 +3,27 @@ import { Howl } from 'howler';
 
 const sounds = {
   bgmTitle: new Howl({
-    src: ['https://assets.mixkit.co/music/preview/mixkit-traditional-japanese-music-2285.mp3'],
+    src: ['MusMus-BGM-062'],
     loop: true,
-    volume: 0.5
+    volume: 0.3
   }),
   bgmBattle: new Howl({
-    src: ['https://assets.mixkit.co/music/preview/mixkit-epic-orchestra-transition-2290.mp3'],
+    src: ['MusMus-BGM-182'],
     loop: true,
-    volume: 0.4
+    volume: 0.1
   }),
   correct: new Howl({
     src: ['https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3'],
     volume: 0.2
   }),
   wrong: new Howl({
+<<<<<<< HEAD
     src: ['https://audio-previews.elements.envatousercontent.com/files/210354847/preview.mp3'],
     volume: 0.2
+=======
+    src: ['Quiz-Wrong_Buzzer01-mp3'],
+    volume: 0.4
+>>>>>>> 5c0bd49f3f1d03781a4a358428131c0e487dcda4
   }),
   win: new Howl({
     src: ['https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3'],
