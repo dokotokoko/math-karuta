@@ -41,7 +41,7 @@ function App() {
 
   const shuffleFormulas = useCallback(() => {
     const filteredFormulas=formulas.filter(f=>f.difficulty === difficulty);
-    return filteredFormulas.sort(() => Math.random() - 1.0).slice(0, 10);
+    return filteredFormulas.sort(() => Math.random() - 0.5).slice(0, 10);
   }, [difficulty]);
 
   const startGame = useCallback(() => {
@@ -139,7 +139,7 @@ function App() {
                 <button
                   onClick={() => {
                     setDifficulty('beginner');
-                    setTimeout(startGame, 5000);
+                    setTimeout(startGame, 2000);
                   }}
                   className="w-full bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
                   style={{ fontFamily: 'Mamelon' }}
@@ -149,7 +149,7 @@ function App() {
                 <button
                   onClick={() => {
                     setDifficulty('intermediate');
-                    setTimeout(startGame, 5000);
+                    setTimeout(startGame, 2000);
                   }}
                   className="w-full bg-yellow-600 text-white px-6 py-3 rounded-lg hover:bg-yellow-700 transition-colors"
                   style={{ fontFamily: 'Mamelon' }}
@@ -159,7 +159,7 @@ function App() {
                 <button
                   onClick={() => {
                     setDifficulty('advanced');
-                    setTimeout(startGame, 5000);
+                    setTimeout(startGame, 2000);
                   }}
                   className="w-full bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors"
                   style={{ fontFamily: 'Mamelon' }}
