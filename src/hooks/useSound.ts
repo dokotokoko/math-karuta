@@ -3,13 +3,13 @@ import { Howl } from 'howler';
 
 const sounds = {
   bgmTitle: new Howl({
-    src: @[card](https://www.youtube.com/watch?v=981IQMjsYMw)
+    src: ['https://www.youtube.com/watch?v=981IQMjsYMw']
 ,
     loop: true,
     volume: 0.3
   }),
   bgmBattle: new Howl({
-    src: @[card](https://www.youtube.com/watch?v=gAWUdddNR7A)
+    src: ['https://www.youtube.com/watch?v=gAWUdddNR7A']
 ,
     loop: true,
     volume: 0.1
@@ -19,13 +19,8 @@ const sounds = {
     volume: 0.2
   }),
   wrong: new Howl({
-<<<<<<< HEAD
     src: ['https://audio-previews.elements.envatousercontent.com/files/210354847/preview.mp3'],
     volume: 0.2
-=======
-    src: ['Quiz-Wrong_Buzzer01-mp3'],
-    volume: 0.4
->>>>>>> 5c0bd49f3f1d03781a4a358428131c0e487dcda4
   }),
   win: new Howl({
     src: ['https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3'],
