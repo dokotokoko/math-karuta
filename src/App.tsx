@@ -41,7 +41,7 @@ function App() {
 
   const shuffleFormulas = useCallback(() => {
     const filteredFormulas=formulas.filter(f=>f.difficulty === difficulty);
-    return filteredFormulas.sort(() => Math.random() - 0.5).slice(0, 10);
+    return filteredFormulas.sort(() => Math.random() - 1.0).slice(0, 10);
   }, [difficulty]);
 
   const startGame = useCallback(() => {
