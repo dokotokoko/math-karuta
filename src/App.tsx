@@ -17,7 +17,7 @@ const difficultySettings: Record<Difficulty, DifficultyConfig> = {
 
 function App() {
   const [gameStarted, setGameStarted] = useState(false);
-  const [difficulty, setDifficulty] = useState<Difficulty>('beginner');
+  const [difficulty, setDifficulty] = useState<Difficulty | null>(null);
   const [score, setScore] = useState({ player: 0, cpu: 0 });
   const [currentProblem, setCurrentProblem] = useState<typeof formulas[0] | null>(null);
   const [displayedFormulas, setDisplayedFormulas] = useState<typeof formulas>([]);
