@@ -53,20 +53,46 @@ function App() {
 
   const shuffleFormulas = useCallback(() => {
     const filteredFormulas=formulas.filter(f=>f.difficulty === difficulty);
-    return filteredFormulas.sort(() => Math.random() - 0.5).slice(0, 10);
+    return filteredFormulas.sort(() => Math.random() - 0.5);
   }, [difficulty]);
 
   const startGame = useCallback(() => {
     const shuffled = shuffleFormulas();  // 選択された難易度の公式をシャッフル
     setDisplayedFormulas(shuffled);      // 表示する公式を設定
     setCurrentProblem(shuffled[0]);      // 最初の問題を設定
+    setProblemCount(1);
     setScore({ player: 0, cpu: 0 });     // スコアをリセット
-    setProblemCount(0);                  // 問題カウントをリセット
+  
     setGameStarted(true);                // ゲーム開始フラグをオン
     setShowSelectScreen(false);          // 選択画面を非表示に
     setGameEnded(false);                 // ゲーム終了フラグをオフ
     setTimeLeft(difficultySettings[difficulty].timeLimit); // 選択した難易度の時間を設定
   }, [difficulty, shuffleFormulas]);
+  
+// 次の問題を設定する関数
+const nextProblem = () => {
+  setProblemCount(prev => {
+    const nextCount = prev + 1; // 次の問題番号を計算
+    if (nextCount < displayedFormulas.length) {
+      setCurrentProblem(displayedFormulas[nextCount]); // 次の問題を設定
+    } else {
+      // 最後の問題を越えた場合の処理（ゲーム終了など）
+      setGameEnded(true);
+    }
+    return nextCount; // 新しい問題カウントを返す
+  });
+};
+
+// 最初の問題が終わるとnextProblemを使って次の問題に進む
+<button onClick={nextProblem}>次の問題</button>
+
+
+
+
+
+
+
+
 
   const handleFormulaClick = useCallback((formula: typeof formulas[0]) => {
     if (!currentProblem || penaltyTimer > 0 || !gameStarted) return;
