@@ -3,13 +3,13 @@ import { Howl } from 'howler';
 
 const sounds = {
   bgmTitle: new Howl({
-    src: ['https://www.youtube.com/watch?v=981IQMjsYMw']
+    src: ['/sounds/MusMus-BGM-062.mp3']
 ,
     loop: true,
     volume: 0.3
   }),
   bgmBattle: new Howl({
-    src: ['https://www.youtube.com/watch?v=gAWUdddNR7A']
+    src: ['/sounds/MusMus-BGM-182.mp3']
 ,
     loop: true,
     volume: 0.1
@@ -49,4 +49,8 @@ export function useSound() {
     Object.values(sounds).forEach(sound => sound.stop());
   }, []);
 
+
   return}
+  document.getElementById("playBGM")?.addEventListener("click",function() {
+    sounds.bgmTitle.play();
+  });
