@@ -3,22 +3,24 @@ import { Howl } from 'howler';
 
 const sounds = {
   bgmTitle: new Howl({
-    src: ['https://assets.mixkit.co/music/preview/mixkit-traditional-japanese-music-2285.mp3'],
+    src: ['MusMus-BGM-062.mp3']
+,
     loop: true,
-    volume: 0.5
+    volume: 0.3
   }),
   bgmBattle: new Howl({
-    src: ['https://assets.mixkit.co/music/preview/mixkit-epic-orchestra-transition-2290.mp3'],
+    src: ['MusMus-BGM-182.mp3']
+,
     loop: true,
-    volume: 0.4
+    volume: 0.1
   }),
   correct: new Howl({
     src: ['https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3'],
-    volume: 0.6
+    volume: 0.2
   }),
   wrong: new Howl({
-    src: ['https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3'],
-    volume: 0.6
+    src: ['https://audio-previews.elements.envatousercontent.com/files/210354847/preview.mp3'],
+    volume: 0.2
   }),
   win: new Howl({
     src: ['https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3'],
@@ -47,4 +49,8 @@ export function useSound() {
     Object.values(sounds).forEach(sound => sound.stop());
   }, []);
 
-  return
+
+  return}
+  document.getElementById("playBGM")?.addEventListener("click",function() {
+    sounds.bgmTitle.play();
+  });
