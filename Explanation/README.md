@@ -740,7 +740,7 @@ if (!gameStarted || !currentProblem) return;
 // 難易度設定の集約例
 const difficultySettings: Record<Difficulty, DifficultyConfig> = {
   beginner: { timeLimit: 120, cpuErrorRate: 0.02 },
-  intermediate: { timeLimit: 300, cpuErrorRate: 0.15 },
+  intermediate: { timeLimit: 300s, cpuErrorRate: 0.15 },
   advanced: { timeLimit: 80000, cpuErrorRate: 0.3 }
 };
 ```
