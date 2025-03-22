@@ -3,13 +3,13 @@ import { Howl } from 'howler';
 
 const sounds = {
   bgmTitle: new Howl({
-    src: ['/sounds/MusMus-BGM-062.mp3']
+    src: ['MusMus-BGM-062.mp3']
 ,
     loop: true,
     volume: 0.3
   }),
   bgmBattle: new Howl({
-    src: ['/sounds/MusMus-BGM-182.mp3']
+    src: ['MusMus-BGM-182.mp3']
 ,
     loop: true,
     volume: 0.1
