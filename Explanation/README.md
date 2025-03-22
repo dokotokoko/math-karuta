@@ -1,7 +1,7 @@
 # 数学カルタ (math-karuta) - プロジェクト解説
 
 数学カルタは、伝統的なかるたゲームと数学の公式を組み合わせた教育的なウェブゲームです。  
-このプロジェクトは、数学の公式を楽しく学習するためのゲームとして設計され、プレイヤーはCPUと対戦しながら公式を覚えます。
+このプロジェクトは、数学の公式とその公式を用いた簡単な問題を楽しく学習するためのゲームとして設計され、プレイヤーはCPUと対戦しながら公式やその問題の基本的な解き方を覚えます。
 
 ---
 
@@ -122,11 +122,11 @@ CSSスタイリングはTailwind CSSを使用し、カードのデザインや�
 
 1. **難易度選択**:
    - ユーザーが難易度ボタン（初級/中級/上級）をクリックするとゲーム開始準備が行われます
-   - クリック後5秒のカウントダウンが発生します：
+   - クリック後2秒のカウントダウンが発生します：
    ```tsx
    onClick={() => {
      setDifficulty('beginner');
-     setTimeout(startGame, 5000);
+     setTimeout(startGame, 2000);
    }}
    ```
 
@@ -326,18 +326,36 @@ const [timeLeft, setTimeLeft] = useState(0);                   // 残り時間
 
 ```tsx
 // src/App.tsx
+
+const shuffleFormulas = useCallback(() => {
+let filteredFormulas: typeof formulas = [];
+
+// 配列のインデックスを使って難易度ごとに問題を取得
+if (difficulty === 'beginner') {
+filteredFormulas = formulas.slice(0, 40); // 1〜40個目
+} else if (difficulty === 'intermediate') {
+filteredFormulas = formulas.slice(41, 68); // 41〜68個目
+} else if (difficulty === 'advanced') {
+filteredFormulas = formulas.slice(69, 88); // 69〜88個目
+}
+
+// ランダムにシャッフルして最初の10問を取得
+return filteredFormulas.sort(() => Math.random() - 0.5).slice(0, 10);
+}, [difficulty]);
+
 const startGame = useCallback(() => {
-  const shuffled = shuffleFormulas();            // 公式をシャッフル
-  setDisplayedFormulas(shuffled);                // 表示する公式を設定
-  setCurrentProblem(shuffled[0]);                // 最初の問題を設定
+  const shuffled = shuffleFormulas();           // 選択された難易度の公式をシャッフル
+  setDisplayedFormulas(shuffled);               // 表示する公式を設定
+  setCurrentProblem(shuffled[0]);               // 最初の問題を設定
   setScore({ player: 0, cpu: 0 });              // スコアをリセット
   setProblemCount(0);                           // 問題カウントをリセット
   setGameStarted(true);                         // ゲーム開始フラグをオン
   setShowSelectScreen(false);                   // 選択画面を非表示に
   setGameEnded(false);                          // ゲーム終了フラグをオフ
-  setTimeLeft(difficultySettings[difficulty].timeLimit); // タイマーを設定
+  setTimeLeft(difficultySettings[difficulty].timeLimit);  // 選択した難易度の時間を設定
 }, [difficulty, shuffleFormulas]);
-```
+
+
 
 この関数は難易度選択後に呼び出され、ゲームに必要な全ての状態を初期化します。
 
@@ -721,9 +739,9 @@ if (!gameStarted || !currentProblem) return;
 ```tsx
 // 難易度設定の集約例
 const difficultySettings: Record<Difficulty, DifficultyConfig> = {
-  beginner: { timeLimit: 120, cpuErrorRate: 0.3 },
-  intermediate: { timeLimit: 60, cpuErrorRate: 0.15 },
-  advanced: { timeLimit: 30, cpuErrorRate: 0.02 }
+  beginner: { timeLimit: 120, cpuErrorRate: 0.02 },
+  intermediate: { timeLimit: 300, cpuErrorRate: 0.15 },
+  advanced: { timeLimit: 80000, cpuErrorRate: 0.3 }
 };
 ```
 
