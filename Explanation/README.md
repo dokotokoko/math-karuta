@@ -122,11 +122,11 @@ CSSスタイリングはTailwind CSSを使用し、カードのデザインや�
 
 1. **難易度選択**:
    - ユーザーが難易度ボタン（初級/中級/上級）をクリックするとゲーム開始準備が行われます
-   - クリック後5秒のカウントダウンが発生します：
+   - クリック後2秒のカウントダウンが発生します：
    ```tsx
    onClick={() => {
      setDifficulty('beginner');
-     setTimeout(startGame, 5000);
+     setTimeout(startGame, 2000);
    }}
    ```
 
@@ -741,7 +741,7 @@ if (!gameStarted || !currentProblem) return;
 const difficultySettings: Record<Difficulty, DifficultyConfig> = {
   beginner: { timeLimit: 120, cpuErrorRate: 0.3 },
   intermediate: { timeLimit: 60, cpuErrorRate: 0.15 },
-  advanced: { timeLimit: 30, cpuErrorRate: 0.02 }
+  advanced: { timeLimit: 80000, cpuErrorRate: 0.02 }
 };
 ```
 
