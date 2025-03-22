@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { formulas } from './data/formulas';
 import { Volume2, VolumeX, Trophy, Award } from 'lucide-react';
 
@@ -10,14 +10,26 @@ interface DifficultyConfig {
 }
 
 const difficultySettings: Record<Difficulty, DifficultyConfig> = {
-  beginner: { timeLimit: 120, cpuErrorRate: 0.3 },
-  intermediate: { timeLimit: 60, cpuErrorRate: 0.15 },
-  advanced: { timeLimit: 80000, cpuErrorRate: 0.02 }
+  beginner: { timeLimit: 120, cpuErrorRate: 0.02 },
+  intermediate: { timeLimit: 300, cpuErrorRate: 0.15 },
+  advanced: { timeLimit: 80000, cpuErrorRate: 0.3 }
 };
 
 function App() {
   const [gameStarted, setGameStarted] = useState(false);
-  const [difficulty, setDifficulty] = useState<Difficulty | null>(null);
+  const [difficulty, setDifficulty] = useState<Difficulty>('beginner');
+
+  return(
+    <div>
+      <h2>難易度を選択: {difficulty}</h2>
+      <select value={difficulty} onChange={(e) => setDifficulty(e.target.value as Difficulty)}>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+    </div>
+  );
+  )
   const [score, setScore] = useState({ player: 0, cpu: 0 });
   const [currentProblem, setCurrentProblem] = useState<typeof formulas[0] | null>(null);
   const [displayedFormulas, setDisplayedFormulas] = useState<typeof formulas>([]);
@@ -32,7 +44,7 @@ function App() {
     if (muted) return;
     const sounds = {
       correct: 'https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3',
-      wrong: 'https://audio-previews.elements.envatousercontent.com/files/210354847/preview.mp3',
+      wrong: 'https://assets.mixkit.co/active_storage/sfx/2003/2003-preview.mp3',
       win: 'https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3',
       lose: 'https://assets.mixkit.co/active_storage/sfx/1430/1430-preview.mp3'
     };
@@ -85,11 +97,9 @@ function App() {
   const endGame = useCallback(() => {
     setGameStarted(false);
     setGameEnded(true);
-    setDisplayedFormulas([]); 
     const playerWon = score.player > score.cpu;
     playSound(playerWon ? 'win' : 'lose');
   }, [score]);
-  
 
   useEffect(() => {
     if (!gameStarted || !currentProblem) return;
@@ -121,10 +131,10 @@ function App() {
   }, [penaltyTimer]);
 
   return (
-    <div className="min-h-screen bg-whiteflex flex-col justify-center items-center">
+    <div className="min-h-screen bg-white">
       <div className="container mx-auto px-4 py-8">
-        <div className="text-center mb-8 w-full">
-          <h1 className="text-9xl font-bold mb-4" style={{ fontFamily: 'KaiTi, cursive' }}>数学かるた</h1>
+        <div className="text-center mb-8">
+          <h1 className="text-5xl font-bold mb-4" style={{ fontFamily: 'Mamelon' }}>数学かるた</h1>
           <p className="text-xl mb-4" style={{ fontFamily: 'Mamelon' }}>Mathematical Karuta</p>
           
           <button
@@ -156,7 +166,7 @@ function App() {
                   className="w-full bg-yellow-600 text-white px-6 py-3 rounded-lg hover:bg-yellow-700 transition-colors"
                   style={{ fontFamily: 'Mamelon' }}
                 >
-                  中級 (1分)
+                  中級 (5分)
                 </button>
                 <button
                   onClick={() => {
@@ -166,7 +176,7 @@ function App() {
                   className="w-full bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors"
                   style={{ fontFamily: 'Mamelon' }}
                 >
-                  上級 (80000秒)
+                  上級 (60分)
                 </button>
               </div>
             </div>
